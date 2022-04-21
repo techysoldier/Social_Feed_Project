@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+
 
 function App() {
+
+  const [entries,setEntries] = useState([{name:'Devin', post:'Id like a sandwhich'}])
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <table> 
+        <thead>
+          <tr>
+          <th> Name </th>
+          <th> Post</th>
+          </tr>
+        </thead>
+        <tbody>
+        {entries.map((entry) => {
+          return(
+            <tr>
+              <td>{entry.name}</td>
+              <td>{entry.post}</td>
+            </tr>
+          );
+        })}
+        </tbody>
+      </table>
     </div>
   );
 }
