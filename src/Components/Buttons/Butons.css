@@ -1,0 +1,22 @@
+.inactive {
+    color: black;
+    border-radius: 25px;
+    border-color:white;
+    
+}
+.active {
+    background-color:green;
+    fill:white;
+    border-color:green;
+    border-radius:25px;
+}
+.on {
+    background-color:darkred;
+    fill:white;
+    border-color:darkred;
+    border-radius:25px;
+}
+.post-buttons {
+    display:flex;
+    justify-content: right;
+}
