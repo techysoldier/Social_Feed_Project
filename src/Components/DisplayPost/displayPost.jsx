@@ -1,3 +1,5 @@
+// import Buttons from '../Buttons/Buttons';
+
 const DisplayPost = (props) => {
     return (  
         <table>
@@ -17,6 +19,7 @@ const DisplayPost = (props) => {
                 <td>{entry.post}</td>
                 </li>
                 <td>{entry.date}</td>
+                {/* <Buttons /> */}
               </tr>
             );
           })}

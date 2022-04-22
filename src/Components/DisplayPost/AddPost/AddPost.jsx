@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 
+
 const AddPost = (props) => {
 
     const [name, setName]=useState('');
