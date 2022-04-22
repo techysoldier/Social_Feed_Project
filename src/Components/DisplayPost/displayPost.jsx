@@ -1,20 +1,27 @@
+
 const DisplayPost = (props) => {
-  return (
-    <div>
-      {props.setentires((post, index) => {
-        return (
-          <ul key={index} className="border-box">
-            <div>
-              <li>{post.date}</li>
-              <li>
-                <h3>{post.name}</h3>
-              </li>
-              <li>{post.comment}</li>
-            </div>
-          </ul>
-        );
-      })}
-    </div>
-  );
-};
+    return (  
+        <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Post</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {props.parentEntries.map((entry) => {
+            return (
+              <tr>
+                <td>{entry.name}</td>
+                <td>{entry.post}</td>
+                <td>{entry.date}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    );
+}
+ 
 export default DisplayPost;
