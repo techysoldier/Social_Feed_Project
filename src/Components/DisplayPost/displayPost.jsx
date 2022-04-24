@@ -1,4 +1,6 @@
-// import Buttons from '../Buttons/Buttons';
+import LikeDislikeButton from "../Buttons/Buttons";
+
+
 
 const DisplayPost = (props) => {
     return (  
@@ -19,7 +21,7 @@ const DisplayPost = (props) => {
                 <td>{entry.post}</td>
                 </li>
                 <td>{entry.date}</td>
-                {/* <Buttons /> */}
+                <LikeDislikeButton />
               </tr>
             );
           })}

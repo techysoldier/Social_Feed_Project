@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 
-
 const AddPost = (props) => {
 
     const [name, setName]=useState('');
@@ -27,6 +26,7 @@ const AddPost = (props) => {
             <label> Date </label>
             <input type ='date' value ={date} onChange={(event) => setDate(event.target.value)} />
             <button type = 'submit'>Post</button>
+
         </form>
     );
 }
